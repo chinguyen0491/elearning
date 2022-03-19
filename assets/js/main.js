@@ -1,7 +1,22 @@
 // ==================== HANDLE HEADER SECTION ==================== //
-const btnTest = document.querySelector('.header__buyNow-link')
-const header = document.querySelector('.header__section')
+const headerSection = document.querySelector('.header__section')
+const btnToTop = document.querySelector('.btn__toTop')
+let prevScroll
 
-btnTest.onclick = () => {
-    header.classList.toggle('active')
+window.onscroll = () => {
+    const st = window.scrollY
+    if(st > 120) {
+        headerSection.classList.add('active')
+    } else {
+        headerSection.classList.remove('active')
+    }
+
+    if(st < prevScroll && st > 200) {
+        console.log('up')
+        btnToTop.classList.add('active')
+    } else {
+        console.log('down')
+        btnToTop.classList.remove('active')
+    }
+    prevScroll = st
 }
