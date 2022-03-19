@@ -105,3 +105,7 @@ html {
 .header__buyNow-link:hover::after {
     transform: rotate(45deg) scaleY(3) translateY(0);
 }
+
+.test {
+    height: 1900px;
+}
