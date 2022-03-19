@@ -1,8 +1,8 @@
 // ==================== HANDLE HEADER SECTION ==================== //
 const headerSection = document.querySelector('.header__section')
 const btnToTop = document.querySelector('.btn__toTop')
-let prevScroll
 
+// Config button to top
 window.onscroll = () => {
     const st = window.scrollY
     if(st > 120) {
@@ -11,12 +11,9 @@ window.onscroll = () => {
         headerSection.classList.remove('active')
     }
 
-    if(st < prevScroll && st > 200) {
-        console.log('up')
+    if(st > 200) {
         btnToTop.classList.add('active')
     } else {
-        console.log('down')
         btnToTop.classList.remove('active')
     }
-    prevScroll = st
 }
