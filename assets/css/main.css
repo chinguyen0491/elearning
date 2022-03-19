@@ -106,6 +106,45 @@ html {
     transform: rotate(45deg) scaleY(3) translateY(0);
 }
 
+/* BUTTON GO TO TOP */
+.btn__toTop {
+    background-color: #ff8806;
+    color: #fff;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 50px 12px 20px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    transition: transform .2s ease-in-out;
+    transform: translateY(150px) rotateY(180deg);
+}
+
+.btn__toTop.active {
+    transform: translateY(0) rotateY(360deg);
+}
+
+.btn__toTop:hover {
+    transform: scale(1.05);
+}
+
+.btn__toTop i {
+    font-size: 3rem;
+    position: absolute;
+    transition: .2s linear;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn__toTop:hover i {
+    top: 15px;
+}
+
 .test {
     height: 1900px;
 }
