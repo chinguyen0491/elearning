@@ -17,3 +17,18 @@ window.onscroll = () => {
         btnToTop.classList.remove('active')
     }
 }
+
+// ================= ANIMATION IMAGE HERO ================= //
+const imgHeros = document.getElementsByClassName('hero__img')
+const heroContent = document.querySelector('.hero__content')
+const heroTagImg1 = document.querySelector('.hero__img1-tag')
+
+window.onload = () => {
+    Array.from(imgHeros).forEach(imgHero => {
+        imgHero.classList.add('active')
+    })
+    Array.from(heroContent.children).forEach(chil => {
+        chil.classList.add('active')
+    })
+    heroTagImg1.classList.add('active')
+}
