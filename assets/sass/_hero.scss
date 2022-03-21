@@ -5,8 +5,8 @@
   background-position: 20% 0;
   position: relative;
   height: 1300px;
-  
-  &-laptop{
+
+  &-laptop {
     width: 860px;
     height: 430px;
     position: absolute;
@@ -59,20 +59,21 @@
   position: absolute;
   top: 400px;
   transform: translateY(-50%);
-  width: 420px;
+  width: 500px;
   color: #fff;
   left: 150px;
 }
 
 .hero__content-title {
   opacity: 0;
-  font-size: 4rem;
+  font-size: 46px;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
 .hero__content-paragraph {
   opacity: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 16px;
   line-height: 1.8;
 }
@@ -82,17 +83,17 @@
   font-size: 1.4rem;
   font-weight: 800;
   color: #fff;
-  width: 150px;
-  height: 50px;
+  padding: 25px 50px;
   display: inline-flex;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 50px;
   transition: 0.2s linear;
   position: relative;
   z-index: 2;
   justify-content: center;
   align-items: center;
   margin-top: 32px;
+  border: 2px solid #fff;
 }
 
 .hero__content-title.active {
@@ -182,7 +183,6 @@
     opacity: 1;
   }
 }
-
 
 .hero__img1-wrap {
   position: absolute;

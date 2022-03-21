@@ -1,4 +1,11 @@
-#footer{
-    background: url(../img/footer.webp);
-    height: 110vh;
+#footer {
+  background: url(../img/footer.webp) no-repeat;
+  .footer__logo {
+    padding: 100px 0;
+    img {
+      display: flex;
+      margin: auto;
+      max-width: calc(100% / 3 * 2);
+    }
+  }
 }
