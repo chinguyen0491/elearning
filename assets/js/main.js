@@ -59,8 +59,9 @@ const animationImgHero = (() => {
 
 // ========================= HANDLE ACTIVE HERO >> FOOTER ========================= //
 const activeFooterHero = (() => {
-    const laptopHeroFooter = document.getElementById('hero__footer-imgLaptop')
-    const treeHeroFooter = document.getElementById('hero__footer-imgTree')
+    const laptopHeroFooter = document.querySelector('.hero__section-laptop')
+    const treeHeroFooter = document.querySelector('.hero__section-tree')
+    console.dir(laptopHeroFooter)
 
     const handleActiveHeroFooter = () => {
         if (window.scrollY > 300) {
@@ -78,17 +79,3 @@ const activeFooterHero = (() => {
 })()
 
 // ========================== HANDLE VIDEO SECTION ========================== //
-
-const videoSection = (() => {
-    const playBtn = document.querySelector('.vid__section-icon')
-    const imgBG = document.querySelector('.vid__section-img')
-    const iconWrap = document.querySelector('.vid__section-iconWrap')
-    const vid = document.querySelector('.vid__section-video')
-    const handlePlay = () => {
-        iconWrap.classList.add('remove')
-        imgBG.classList.add('remove')
-        vid.classList.add('active')
-        vid.play()
-    }
-    playBtn.addEventListener('click', handlePlay, true)
-})()
