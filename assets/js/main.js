@@ -78,4 +78,25 @@ const activeFooterHero = (() => {
     window.addEventListener('load', addHandleActiveHeroFooter)
 })()
 
-// ========================== HANDLE VIDEO SECTION ========================== //
+// ========================== HANDLE VIDEO SECTION ==========================
+
+// function myFunction(e) {
+//     var elems = document.querySelectorAll(".answer__list-item");
+//     [].forEach.call(elems, function(el) {
+//       el.classList.remove("active");
+//     });
+//     e.target.className = "active";
+//   }
+
+const answers = document.querySelectorAll('.answer__list-item')
+console.dir(answers)
+
+Array.from(answers).forEach(answer => {
+    answer.onclick = (e) => {
+        console.log('click')
+        if(document.querySelector('.answer__list-item.active')){
+            document.querySelector('.answer__list-item.active').classList.remove('active')
+        }
+        e.target.closest('.answer__list-item').classList.add('active')
+    }
+})
