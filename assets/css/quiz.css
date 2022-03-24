@@ -103,7 +103,8 @@ html {
 }
 
 .answer__item {
-  font-size: 3rem;
+  font-size: 2rem;
+  padding: 0 1rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -220,6 +221,11 @@ html {
   text-transform: uppercase;
 }
 
+#quest__btn-submit,#quest__btn-next{
+  background: linear-gradient(to left, #f5b8b8, #cd0000);
+
+}
+
 .quest__btn:hover {
   color: #000;
 }
@@ -232,6 +238,10 @@ html {
 
 .quest__btn-txt {
   margin: 8px;
+}
+
+#quest__btn-submit{
+  display:none;
 }
 
 /* >> QUEST LIST CSS */

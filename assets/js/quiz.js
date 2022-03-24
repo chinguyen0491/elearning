@@ -190,15 +190,20 @@ const prevQuestBtn = $('#quest__btn-prev')
 
 const handleNextQuest = () => {
     idQuest++
-    if (idQuest > questValue.length - 1) {
+    if (idQuest > questValue.length - 2) {
         idQuest = questValue.length - 1
+        document.querySelector("#quest__btn-next").style.display = "none"
+        document.querySelector("#quest__btn-submit").style.display = "block"
     }
     renderQuestContent()
 }
 const handlePrevQuest = () => {
     idQuest--
+    document.querySelector("#quest__btn-next").style.display = "block"
+    document.querySelector("#quest__btn-submit").style.display = "none"
     if (idQuest < 0) {
         idQuest = 0
+
     }
     renderQuestContent()
 }
