@@ -23,132 +23,132 @@ const handleTimer = setInterval(() => {
 const questValue = [
     {
         id: 0,
-        quest: 'Câu 1: Which is the Smallest Country in the World?',
+        quest: 'Câu 1: Loại nào là loại đẳng cấp nhất?',
         answer: [
             {
-                answerContent: 'Thanh Hóa',
+                answerContent: 'Nhung',
                 actived: false
             },
             {
-                answerContent: 'Nghệ An',
+                answerContent: 'Hương',
                 actived: false
             },
             {
-                answerContent: 'Hà Nội',
+                answerContent: 'Linh',
                 actived: false
             },
             {
-                answerContent: 'Quảng Bình',
+                answerContent: 'Ngân',
                 actived: false
             }
         ],
         completed: false
     }, {
         id: 1,
-        quest: 'Câu 2: Which is the Smallest Country in the World?',
+        quest: 'Câu 2: Bao lâu nữa thì bán được một tỷ gói mè? Trả lời',
         answer: [
             {
-                answerContent: 'Thanh Hóa',
+                answerContent: 'Một tuần',
                 actived: false
             },
             {
-                answerContent: 'Nghệ An',
+                answerContent: 'Một tháng',
                 actived: false
             },
             {
-                answerContent: 'Hà Nội',
+                answerContent: 'Một năm',
                 actived: false
             },
             {
-                answerContent: 'Quảng Bình',
+                answerContent: 'Một đấm',
                 actived: false
             }
         ],
         completed: false
     }, {
         id: 2,
-        quest: 'Câu 3: Which is the Smallest Country in the World?',
+        quest: 'Câu 3: Bao lâu nữa thì được một tỷ tiền lương? Trả lời',
         answer: [
             {
-                answerContent: 'Thanh Hóa',
+                answerContent: 'Một tuần',
                 actived: false
             },
             {
-                answerContent: 'Nghệ An',
+                answerContent: 'Một tháng',
                 actived: false
             },
             {
-                answerContent: 'Hà Nội',
+                answerContent: 'Một năm',
                 actived: false
             },
             {
-                answerContent: 'Quảng Bình',
+                answerContent: 'Một đấm',
                 actived: false
             }
         ],
         completed: false
     }, {
         id: 3,
-        quest: 'Câu 4: Which is the Smallest Country in the World?',
+        quest: 'Câu 4: Ai là đứa trẻ chui ra từ bụi rậm? Trả lời',
         answer: [
             {
-                answerContent: 'Thanh Hóa',
+                answerContent: 'Hoàng Long',
                 actived: false
             },
             {
-                answerContent: 'Nghệ An',
+                answerContent: 'Quách Dũng',
                 actived: false
             },
             {
-                answerContent: 'Hà Nội',
+                answerContent: 'Trung Anh',
                 actived: false
             },
             {
-                answerContent: 'Quảng Bình',
+                answerContent: 'Cả 3',
                 actived: false
             }
         ],
         completed: false
     }, {
         id: 4,
-        quest: 'Câu 5: Which is the Smallest Country in the World?',
+        quest: 'Câu 5: Ai đưa đồ cho Trung Anh chơi?',
         answer: [
             {
-                answerContent: 'Thanh Hóa',
+                answerContent: 'Hoàng Long',
                 actived: false
             },
             {
-                answerContent: 'Nghệ An',
+                answerContent: 'Quách Dũng',
                 actived: false
             },
             {
-                answerContent: 'Hà Nội',
+                answerContent: 'Hải dớ',
                 actived: false
             },
             {
-                answerContent: 'Quảng Bình',
+                answerContent: 'Trung Anh tự lấy',
                 actived: false
             }
         ],
         completed: false
     }, {
         id: 5,
-        quest: 'Câu 6: Which is the Smallest Country in the World?',
+        quest: 'Câu 6: Khi rảnh rỗi Linh sẽ làm gì?',
         answer: [
             {
-                answerContent: 'Thanh Hóa',
+                answerContent: 'Làm việc',
                 actived: false
             },
             {
-                answerContent: 'Nghệ An',
+                answerContent: 'Làm giá',
                 actived: false
             },
             {
-                answerContent: 'Hà Nội',
+                answerContent: 'Làm thinh',
                 actived: false
             },
             {
-                answerContent: 'Quảng Bình',
+                answerContent: 'Làm phiền người khác',
                 actived: false
             }
         ],
