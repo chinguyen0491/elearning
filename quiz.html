@@ -1,36 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <title>Quizo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    <script defer src="assets/js/quiz.js"></script>
 </head>
+
 <body>
-    <div class="quiz__container">
-        <div class="quiz__logo">
-            <img src="assets/img/quizlogo.png" alt="">
-        </div>
-        
-        <div class="question__quiz">
-            <div class="question__timer">
-                <img src="assets/img/clock.png" alt="">
-                <p class="clock__param">
+    <main class="quest__section">
+        <!-- ==================== LOGO ==================== -->
+        <img src="assets/img/logo.png" alt="Logo" class="quest__logo">
+
+        <!-- ================== QUEST SECTION ================== -->
+        <div class="quest__main">
+            <div class="quest__timer-wrap">
+                <img src="assets/img/time.png" alt="Logo" class="quest__timer-logo">
+                <p class="quest__timer-param">
                     59:59
                 </p>
             </div>
-            <h1 class="question__content">Đất nước nào nhỏ nhất trên thế giới</h1>
+            <h2 class="quest__content">
+            </h2>
+            <ul class="answer__list">
+                <li class="answer__item">
+                    <span class="answer__item-param">A</span>
+                    <span class="answer__item-content">
+                        Thanh Hóa
+                    </span>
+                </li>
+                <li class="answer__item">
+                    <span class="answer__item-param">B</span>
+                    <span class="answer__item-content">
+                        Nghệ An
+                    </span>
+                </li>
+                <li class="answer__item">
+                    <span class="answer__item-param">C</span>
+                    <span class="answer__item-content">
+                        Hà Nội
+                    </span>
+                </li>
+                <li class="answer__item">
+                    <span class="answer__item-param">D</span>
+                    <span class="answer__item-content">
+                        Hà Tĩnh
+                    </span>
+                </li>
+            </ul>
         </div>
-        
-        <ul class="answer__list">
-            <li class="answer__list-item"><span>A</span> Thanh Hóa</li>
-            <li class="answer__list-item"><span>B</span>Nghệ An</li>
-            <li class="answer__list-item"><span>C</span>Hà Tĩnh</li>
-            <li class="answer__list-item"><span>D</span>Quảng Bình</li>
-        </ul>
-    </div>
-    <script src="/assets/js/main.js"></script>
+
+        <!-- ===================== PROCESS SECTION ===================== -->
+        <div class="quiz__param-footer">
+            <div class="quest__numbers-wrap">
+                <div class="quest__numbers">
+                    <span class="quest__current">
+                    </span>
+                    /
+                    <span class="quest__all">
+                    </span>
+                </div>
+            </div>
+            <div class="quest__process">
+                <div class="quest__process-inner"></div>
+                <span class="quest__process-param">0%</span>
+            </div>
+        </div>
+
+        <!-- ========================= BUTTONS ========================= -->
+        <div class="quest__buttons">
+            <button class="quest__btn" id="quest__btn-prev">
+                <span class="quest__btn-icon">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </span>
+                <span class="quest__btn-txt">
+                    Trước
+                </span>
+            </button>
+            <button class="quest__btn" id="quest__btn-next">
+                <span class="quest__btn-txt">
+                    Sau
+                </span>
+                <span class="quest__btn-icon">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </span>
+            </button>
+        </div>
+
+    </main>
 </body>
+
 </html>

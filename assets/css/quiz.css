@@ -1,0 +1,273 @@
+/* ================================ IMPORT FONT ================================ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/* ================================= RESET CSS ================================= */
+:root {
+  --main-color: #3096f1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 10px;
+}
+
+/* ================================== RENGULAR CSS ================================== */
+.quest__section {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  background-image: url(../img/background.png);
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quest__logo {
+  position: absolute;
+  height: 60px;
+  top: 50px;
+  left: 60px;
+}
+
+.quest__main {
+  background: linear-gradient(180deg, #f3bcbc, #cd0000);
+  height: 60rem;
+  width: 90rem;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 64px;
+}
+
+.quest__timer-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quest__timer-wrap {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 32px;
+}
+
+.quest__timer-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.quest__timer-param {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 16px;
+  color: #ffffff;
+}
+
+.quest__content {
+  font-size: 6rem;
+}
+
+.answer__list {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  left: 50%;
+  transform: translateY(50%) translateX(-50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.answer__item {
+  font-size: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #222;
+  height: 20rem;
+  width: 18rem;
+  cursor: pointer;
+  margin: 16px;
+  font-weight: 600;
+}
+
+.answer__item-param {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.answer__item.active,
+.answer__item.active > .answer__item-param {
+  background: linear-gradient(#fcefef, #cd0000);
+  color: rgb(255, 255, 255);
+}
+
+/* ===================================== QUEST PARAM CSS ===================================== */
+.quiz__param-footer {
+  margin-top: 11rem;
+  width: 50%;
+}
+
+/* >> PROCESS CSS */
+.quest__process {
+  height: 3.8rem;
+  background: linear-gradient(#4780a1, #00a2ff);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 5px solid #fff;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.quest__process-param {
+  color: #222;
+  font-size: 2.5rem;
+  position: absolute;
+  z-index: 3;
+  font-weight: 600;
+}
+
+.quest__process::before {
+  content: "";
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.quest__process-inner {
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#f1cece, #cd0000);
+  position: absolute;
+  z-index: 1;
+  transition: 0.2s linear;
+}
+
+.quest__buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.quest__btn {
+  font-size: 2.2rem;
+  color: #fff;
+  background: linear-gradient(to right, #f5b8b8, #cd0000);
+  width: 20rem;
+  height: 6rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s linear;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.quest__btn:hover {
+  color: #000;
+}
+
+.quest__btn-icon {
+  font-size: 2rem;
+  transform: scaleX(1.2);
+  margin: 8px;
+}
+
+.quest__btn-txt {
+  margin: 8px;
+}
+
+/* >> QUEST LIST CSS */
+.quest__list-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 5px;
+}
+
+.quest__numbers-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.quest__numbers {
+  font-size: 2rem;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cd0000;
+  font-weight: 700;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.quest__current {
+
+}
+
+.quest__count {
+
+}
