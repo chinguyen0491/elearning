@@ -1,11 +1,8 @@
 #footer {
-  background: url(../img/footer.webp) no-repeat;
+  background: #ff4747;
   .footer__logo {
-    padding: 100px 0;
-    img {
-      display: flex;
-      margin: auto;
-      max-width: calc(100% / 3 * 2);
-    }
+    font-size: 24px;
+    padding: 10px 0;
+    text-align: center;
   }
 }

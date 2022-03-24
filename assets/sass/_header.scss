@@ -45,7 +45,7 @@ html {
 }
 
 .header__section.active {
-  background-color: #ff8806;
+  background-color: #fa6a6a;
   height: 96px;
 }
 
@@ -87,12 +87,13 @@ html {
 
 .header__buyNow-link {
   padding: 15px 42px;
-  background-color: #000;
+  background-color: #ff4747;
   color: #fff;
   font-size: 1.8rem;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 16px #a90000;
 }
 
 .header__buyNow-link::after {
@@ -111,7 +112,7 @@ html {
 
 /* BUTTON GO TO TOP */
 .btn__toTop {
-  background-color: #ff8806;
+  background-color:#ff4747;
   color: #fff;
   position: fixed;
   bottom: 50px;

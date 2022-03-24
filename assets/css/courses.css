@@ -1,0 +1,408 @@
+/* ========================= IMPORT FONT ========================= */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+/* ========================== RESET CSS ========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+/* ========================== RENGULAR CSS ========================== */
+html {
+  color: #333;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f4f4f4;
+  transition: 0.2s linear;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto !important;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.pd-2 {
+  padding: 24px !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+/* ======================== HEADER SECTION ======================== */
+.header__section {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 134px;
+  display: flex;
+  background-color: #fa6a6a;
+
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  padding: 0 65px;
+  transition: 0.2s linear;
+}
+
+.header__section.active {
+  background-color: #fa6a6a;
+  height: 96px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.header__nav-item {
+  margin: 0 25px;
+  position: relative;
+}
+
+.header__nav-link {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.header__nav-lineItem {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.header__nav-link:hover ~ .header__nav-lineItem {
+  transform: scaleX(1);
+}
+
+.header__buyNow-link {
+  padding: 15px 42px;
+  background-color: #ff4747;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 16px #a90000;
+}
+
+.header__buyNow-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: rotate(45deg) scaleY(3) translateY(-50%);
+  transition: 0.2s linear;
+}
+
+.header__buyNow-link:hover::after {
+  transform: rotate(45deg) scaleY(3) translateY(0);
+}
+
+/*======================= MAIN =========================*/
+.main {
+  position: relative;
+  /*======================= FORM =========================*/
+}
+.main__feature {
+  background: rgba(0, 0, 0, 0.75) url(../img/page-feat.jpg) no-repeat center;
+  height: 300px;
+  position: relative;
+}
+.main__feature h2 {
+  padding: 125px 0;
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+}
+.main__feature::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(146, 89, 89, 0.75);
+}
+.main__form {
+  padding: 60px;
+  margin-top: 100px;
+}
+.main__form-search .search__form {
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(24, 33, 99, 0.1);
+  border-radius: 10px;
+}
+.main__form-search .search__form form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__form-search .search__form form input {
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 65%;
+  border-radius: 5px;
+}
+.main__form-search .search__form form input:focus {
+  outline: none;
+  box-shadow: 0 0 3px rgba(240, 49, 49, 0.5);
+  transition: 0.3s;
+}
+.main__form-search .search__form form button {
+  border: none;
+  background-color: #e96565;
+  width: 30%;
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+}
+.main__form-search .search__form form button:hover {
+  box-shadow: 0 0 15px rgba(240, 49, 49, 0.5);
+  transition: 0.3s;
+}
+
+/*==============================COURSES==================================*/
+.courses {
+  margin-top: 32px;
+}
+.courses__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.courses__list-item {
+  width: 30%;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px rgba(24, 33, 99, 0.1);
+}
+.courses__list-item .course__image {
+  position: relative;
+}
+.courses__list-item .course__image img {
+  width: 100%;
+}
+.courses__list-item .course__image-ribbon {
+  background-color: #e96565;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 0;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  position: absolute;
+  padding: 7px 15px;
+  top: 20px;
+  left: -15px;
+}
+.courses__list-item .course__image-ribbon:after {
+  content: "";
+  position: absolute;
+  top: auto;
+  left: 4px;
+  right: auto;
+  bottom: -7px;
+  background: #c40000;
+  transform: rotate(35deg);
+  height: 20px;
+  width: 20px;
+  z-index: -1;
+}
+.courses__list-item .course__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.courses__list-item .course__desc {
+  padding: 0 24px !important;
+}
+.courses__list-item .course__more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses__list-item .course__more-participant {
+  margin-bottom: 16px;
+}
+.courses__list-item .course__more-participant i {
+  color: #ccc;
+}
+.courses__list-item .course__more-rating i {
+  color: #ffe81c;
+}
+.courses__list-item .course__more-btn button {
+  --color: #6a5af9;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, #e96565, #ffe2e2);
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  position: relative;
+  isolation: isolate;
+}
+.courses__list-item .course__more-btn button:before {
+  content: "";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #ffe2e2, #e96565);
+  z-index: -1;
+  transition: width 0.25s ease-in;
+  border-radius: 4px;
+}
+.courses__list-item .course__more-btn button:hover:before {
+  width: 100%;
+}
+
+/*===========================PAGINATION=====================================*/
+.pagination {
+  border-top: 1px solid #e0e4e6;
+  display: block;
+  width: 100%;
+  margin: 30px 0 0;
+  padding: 30px 0;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+.pagination a {
+  display: inline-block;
+  color: #999;
+  border: 1px solid #e0e4e6;
+  border-radius: 5px;
+  padding: 7px 15px;
+  margin-right: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.pagination a.active {
+  color: #000;
+  border: 2px solid #000;
+}
+
+.main__category {
+  width: 300px;
+  position: absolute;
+  top: 283px;
+  box-shadow: 0 10px 30px rgba(24, 33, 99, 0.1);
+}
+
+/* reset our lists to remove bullet points and padding */
+.main__category-list,
+.category__submenu {
+  border-radius: 10px;
+  cursor: pointer;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.main__category-list a,
+.main__category-list label {
+  display: block;
+  background-color: #e96565;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.main__category-list input {
+  display: none;
+}
+
+/* add hover behaviour */
+.main__category-list a:hover {
+  background-color: #c5c5c5;
+}
+
+/* when hovering over a .mainmenu item,
+    display the submenu inside it.
+    we're changing the submenu's max-height from 0 to 200px;
+  */
+.main__category-list :checked + .category__submenu {
+  display: block;
+  max-height: 500px;
+}
+
+/*
+    we now overwrite the background-color for .submenu links only.
+    CSS reads down the page, so code at the bottom will overwrite the code at the top.
+  */
+.category__submenu a {
+  background-color: white;
+  color: #000;
+}
+
+/* hover behaviour for links inside .submenu */
+.category__submenu a:hover {
+  background-color: #fff2f2;
+}
+
+/* this is the initial state of all submenus.
+    we set it to max-height: 0, and hide the overflowed content.
+  */
+.category__submenu a {
+  padding-left: 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#footer {
+  background: #fa6a6a;
+}
+#footer .footer__logo {
+  font-size: 24px;
+  padding: 10px 0;
+  text-align: center;
+}
+/*# sourceMappingURL=app.css.map */

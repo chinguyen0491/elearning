@@ -16,7 +16,7 @@
     <!-- ======================== HEADER SECTION ======================== -->
     <header class="header__section">
       <a href="/">
-        <img src="assets/img/logo__header.webp" alt="logo__header" />
+        <img src="assets/img/logo.png" alt="logo__header" />
       </a>
       <ul class="header__nav">
         <li class="header__nav-item">
@@ -113,49 +113,49 @@
             <div class="introduce__card-item">
               <div class="item__wrap">
                 <div class="item__wrap-img">
-                  <img src="./assets/img/item-img1.webp" />
+                  <img src="./assets/img/courses.png" />
                 </div>
-                <h3 class="item__wrap-title">Eduma Demo</h3>
+                <h3 class="item__wrap-title">Hội nhập văn hóa</h3>
               </div>
             </div>
             <div class="introduce__card-item">
               <div class="item__wrap">
                 <div class="item__wrap-img">
-                  <img src="./assets/img/item-img1.webp" />
+                  <img src="./assets/img/courses.png" />
                 </div>
-                <h3 class="item__wrap-title">Eduma Demo</h3>
+                <h3 class="item__wrap-title">Hội nhập văn hóa</h3>
               </div>
             </div>
             <div class="introduce__card-item">
               <div class="item__wrap">
                 <div class="item__wrap-img">
-                  <img src="./assets/img/item-img1.webp" />
+                  <img src="./assets/img/courses.png" />
                 </div>
-                <h3 class="item__wrap-title">Eduma Demo</h3>
+                <h3 class="item__wrap-title">Hội nhập văn hóa</h3>
               </div>
             </div>
             <div class="introduce__card-item">
               <div class="item__wrap">
                 <div class="item__wrap-img">
-                  <img src="./assets/img/item-img1.webp" />
+                  <img src="./assets/img/courses.png" />
                 </div>
-                <h3 class="item__wrap-title">Eduma Demo</h3>
+                <h3 class="item__wrap-title">Hội nhập văn hóa</h3>
               </div>
             </div>
             <div class="introduce__card-item">
               <div class="item__wrap">
                 <div class="item__wrap-img">
-                  <img src="./assets/img/item-img1.webp" />
+                  <img src="./assets/img/courses.png" />
                 </div>
-                <h3 class="item__wrap-title">Eduma Demo</h3>
+                <h3 class="item__wrap-title">Hội nhập văn hóa</h3>
               </div>
             </div>
             <div class="introduce__card-item">
               <div class="item__wrap">
                 <div class="item__wrap-img">
-                  <img src="./assets/img/item-img1.webp" />
+                  <img src="./assets/img/courses.png" />
                 </div>
-                <h3 class="item__wrap-title">Eduma Demo</h3>
+                <h3 class="item__wrap-title">Hội nhập văn hóa</h3>
               </div>
             </div>
           </div>
@@ -195,16 +195,16 @@
         </div>
         <div class="main__courses-category container">
           <ul class="category__menu">
-            <li class="category__menu-item active"><a href="#">Tất cả</a></li>
-            <li class="category__menu-item"><a href="#">Ban Hiền tài</a></li>
-            <li class="category__menu-item"><a href="#">Ban TH&SP</a></li>
+            <li class="category__menu-item active"><a href="#/">Tất cả</a></li>
+            <li class="category__menu-item"><a href="#/">Ban cung ứng</a></li>
+            <li class="category__menu-item"><a href="#/">Ban công nghệ</a></li>
             <li class="category__menu-item">
-              <a href="#">Ban chuỗi cung ứng</a>
+              <a href="#/">Ban kiểm soát</a>
             </li>
-            <li class="category__menu-item"><a href="#">Nhà máy</a></li>
-            <li class="category__menu-item"><a href="#">Mua hàng</a></li>
-            <li class="category__menu-item"><a href="#">Kho vận</a></li>
-            <li class="category__menu-item"><a href="#">KH cung, cầu</a></li>
+            <li class="category__menu-item"><a href="#/">Ban hiền tài</a></li>
+            <li class="category__menu-item"><a href="#/">Ban PTKH</a></li>
+            <li class="category__menu-item"><a href="#/">Ban PTTH và SP</a></li>
+            <li class="category__menu-item"><a href="#/">Ban tài chính kế toán</a></li>
           </ul>
         </div>
         <div class="main__courses-course container">
@@ -263,7 +263,7 @@
       <div class="footer container">
         <div class="footer__contact"></div>
         <div class="footer__logo">
-          <img src="./assets/img/logo.png" alt="Logo" />
+          <p>© Bản quyền thuộc về Diligo Holdings</p>
         </div>
       </div>
     </footer>
@@ -273,5 +273,19 @@
       Top
     </a>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+
+            var a = document.querySelectorAll(".category__menu-item a");
+            for (var i = 0, length = a.length; i < length; i++) {
+              a[i].onclick = function() {
+                var b = document.querySelector(".category__menu li.active");
+                if (b) b.classList.remove("active");
+                this.parentNode.classList.add('active');
+              };
+            }
+            document.getElementById("category__menu a").addEventListener("click", function(event){
+              event.preventDefault()
+            });
+    </script>
   </body>
 </html>
