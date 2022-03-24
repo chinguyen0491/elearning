@@ -127,8 +127,8 @@ html {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: #ffb3b3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,8 +223,11 @@ html {
 
 #quest__btn-submit,#quest__btn-next{
   background: linear-gradient(to left, #f5b8b8, #cd0000);
-
 }
+#quest__btn-submit{
+  background: linear-gradient(to left, #f5b8b8, #cd0000);
+}
+
 
 .quest__btn:hover {
   color: #000;
