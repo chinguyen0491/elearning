@@ -45,7 +45,7 @@ const questValue = [
         completed: false
     }, {
         id: 1,
-        quest: 'Câu 2: Bao lâu nữa thì bán được một tỷ gói mè?',
+        quest: 'Câu 2: Bao lâu nữa thì bán được một tỷ gói mè? Trả lời',
         answer: [
             {
                 answerContent: 'Một tuần',
@@ -67,7 +67,7 @@ const questValue = [
         completed: false
     }, {
         id: 2,
-        quest: 'Câu 3: Bao lâu nữa thì được một tỷ tiền lương?',
+        quest: 'Câu 3: Bao lâu nữa thì được một tỷ tiền lương? Trả lời',
         answer: [
             {
                 answerContent: 'Một tuần',
@@ -89,7 +89,7 @@ const questValue = [
         completed: false
     }, {
         id: 3,
-        quest: 'Câu 4: Ai là đứa trẻ chui ra từ bụi rậm?',
+        quest: 'Câu 4: Ai là đứa trẻ chui ra từ bụi rậm? Trả lời',
         answer: [
             {
                 answerContent: 'Hoàng Long',
