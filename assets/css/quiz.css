@@ -140,15 +140,20 @@ html {
   color: rgb(255, 255, 255);
 }
 
+/* ===================================== QUEST PARAM CSS ===================================== */
+.quiz__param-footer {
+  margin-top: 11rem;
+  width: 50%;
+}
+
+/* >> PROCESS CSS */
 .quest__process {
   height: 3.8rem;
   background: linear-gradient(#4780a1, #00a2ff);
-  width: 50%;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-top: 16rem;
   border: 5px solid #fff;
   position: relative;
   z-index: 2;
@@ -185,75 +190,6 @@ html {
   position: absolute;
   z-index: 1;
   transition: 0.2s linear;
-}
-
-.quest__list-section {
-  position: absolute;
-  top: 50px;
-  right: 5%;
-  z-index: 9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.quest__list-btn {
-  font-size: 6rem;
-  background: linear-gradient(#48b6f7, #00a2ff);
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  transition: transform 0.2s linear;
-  cursor: pointer;
-}
-
-.quest__list-btn:hover {
-  transform: scale(1.1);
-}
-
-.quest__list-btn i {
-  color: #fff;
-}
-
-.quest__list {
-  background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 30rem;
-  margin-top: 32px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
-  padding: 16px;
-}
-
-.quest__item {
-  width: calc(100% / 3);
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin: 12px 0;
-}
-
-.quest__item span {
-  color: #222;
-  font-size: 2.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  width: 6rem;
-  height: 6rem;
-  background-color: rgba(204, 204, 204, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.quest__item.active span {
-  color: #fff;
-  background: linear-gradient(#4780a1, #00a2ff);
 }
 
 .quest__buttons {
@@ -296,4 +232,42 @@ html {
 
 .quest__btn-txt {
   margin: 8px;
+}
+
+/* >> QUEST LIST CSS */
+.quest__list-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 5px;
+}
+
+.quest__numbers-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.quest__numbers {
+  font-size: 2rem;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cd0000;
+  font-weight: 700;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.quest__current {
+
+}
+
+.quest__count {
+
 }

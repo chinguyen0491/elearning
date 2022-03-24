@@ -158,6 +158,8 @@ const questValue = [
 const questContent = $('.quest__content')
 const answerContent = $$('.answer__item-content')
 const answerList = $$('.answer__item')
+const numberCurrent = $('.quest__current')
+const numberAll = $('.quest__all')
 let idQuest = 0
 
 const renderQuestContent = () => {
@@ -176,6 +178,8 @@ const renderQuestContent = () => {
             answerItem.classList.remove('active')
         }
     })
+    numberCurrent.innerText = idQuest + 1
+    numberAll.innerText = questValue.length
 }
 
 renderQuestContent()
@@ -227,5 +231,3 @@ Array.from(answerList).forEach(answer => {
         renderQuestContent()
     }
 })
-
-// ========================== HANDLE ACTIVE QUEST LIST ==========================
