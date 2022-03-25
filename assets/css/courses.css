@@ -57,9 +57,10 @@ html {
   right: 0;
   top: 0;
   left: 0;
-  height: 134px;
+  height: 100px;
   display: flex;
-  background-color: #fa6a6a;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px red;
 
   justify-content: space-between;
   align-items: center;
@@ -69,7 +70,7 @@ html {
 }
 
 .header__section.active {
-  background-color: #fa6a6a;
+  background-color: #ffffff;
   height: 96px;
 }
 
@@ -86,7 +87,7 @@ html {
 }
 
 .header__nav-link {
-  color: #fff;
+  color: rgb(49, 49, 49);
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -345,7 +346,7 @@ html {
 .main__category-list a,
 .main__category-list label {
   display: block;
-  background-color: #e96565;
+  background: linear-gradient(to right, red,white);
   text-decoration: none;
   padding: 10px;
   color: white;
@@ -375,7 +376,7 @@ html {
     CSS reads down the page, so code at the bottom will overwrite the code at the top.
   */
 .category__submenu a {
-  background-color: white;
+  background: white;
   color: #000;
 }
 
