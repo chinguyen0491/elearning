@@ -281,7 +281,7 @@ html {
   color: white;
   padding: 15px 30px;
   border-radius: 4px;
-  background-image: linear-gradient(to right, #e96565, #ffe2e2);
+  background-color: #e96565;
   cursor: pointer;
   font-weight: 500;
   outline: none;
@@ -290,20 +290,8 @@ html {
   position: relative;
   isolation: isolate;
 }
-.courses__list-item .course__more-btn button:before {
-  content: "";
-  height: 100%;
-  width: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #ffe2e2, #e96565);
-  z-index: -1;
-  transition: width 0.25s ease-in;
-  border-radius: 4px;
-}
-.courses__list-item .course__more-btn button:hover:before {
-  width: 100%;
+.courses__list-item .course__more-btn button:hover {
+  box-shadow: 0 0 8px 2px hsla(0, 100%, 38%, 0.5);
 }
 
 /*===========================PAGINATION=====================================*/

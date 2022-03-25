@@ -77,9 +77,10 @@
         margin: 4px 16px;
     }
     
-    /* .main__category-list label {
-        margin: 0 16px;
-    } */
+    .main__category-list label {
+        
+        background: #e96565;
+    }
 
     .category__submenu {
         display: none;
