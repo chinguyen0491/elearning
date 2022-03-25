@@ -1,0 +1,116 @@
+/* =========================== TABLET & MOBILE CSS =========================== */
+@media (max-width: 64em) {
+    .header__section .logo{
+        display: none;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+    .courses__list-item {
+        width: 49%;
+        text-align: center;
+    }
+
+    .courses__list-item .course__title {
+        font-size: 30px;
+        font-weight: 700;
+        padding: 8px 0 !important;
+    }
+
+    .courses__list-item p {
+        font-size: 1.2rem;
+    }
+
+    .course__more-participant {
+        font-size: 1.2rem;
+    }
+
+    .course__more-rating {
+        margin-bottom: 16px;
+        font-size: 1.5rem;
+    }
+
+    .courses__list-item .course__more {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .courses__list-item .course__more-btn {
+        width: 100%;
+    }
+
+    .courses__list-item .course__more-btn button {
+        font-size: 24px;
+        margin-top: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 28px;
+        width: 100%;
+    }
+
+    .pagination {
+        font-size: 22px;
+    }
+    .main__category {
+        position: unset;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        box-shadow: none;
+    }
+    
+    .main__category-list {
+        display: flex;
+        margin-bottom: 28px;
+    }
+    
+    .main__category-list a, .main__category-list label {
+        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.12);
+        height: 60px;
+        display: flex;
+        align-items: center;
+        width: 250px;
+        justify-content: center;
+        margin: 4px 16px;
+    }
+    
+    /* .main__category-list label {
+        margin: 0 16px;
+    } */
+
+    .category__submenu {
+        display: none;
+    }
+
+    .main__category-list :checked + .category__submenu {
+    }
+}
+
+/* =============================== TABLET CSS =============================== */
+@media (min-width: 48em) and (max-width: 64em) {
+    .header__nav-link {
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+
+    .header__buyNow-link {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .main__form-search .search__form form input {
+        font-size: 24px;
+    }
+
+    .main__form-search .search__form form button {
+        font-size: 24px;
+    }
+}
+
+/* =============================== MOBILE CSS =============================== */
+@media (max-width: 48em) {
+
+}

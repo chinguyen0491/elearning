@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: 0.2s linear;
+  max-width: 100%;
 }
 
 ul {
@@ -30,7 +31,7 @@ html {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 100%;
   margin: auto !important;
   width: 100%;
   padding-right: 15px;
@@ -131,6 +132,12 @@ html {
 
 .header__buyNow-link:hover::after {
   transform: rotate(45deg) scaleY(3) translateY(0);
+}
+
+.button--show-nav {
+  font-size: 30px;
+  padding: 4px;
+  display: none;
 }
 
 /*======================= MAIN =========================*/
