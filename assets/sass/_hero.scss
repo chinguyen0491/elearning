@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: 100% 0;
   position: relative;
-  height: 600px;
+  height: 80vh;
 
   &-laptop {
     width: 860px;
@@ -243,4 +243,34 @@
   width: 200px;
   right: 0;
   left: 0;
+}
+
+
+  // ====================== HERO RESPONSIVE ======================
+  
+@media (max-width: 48em) {  
+  .hero__section  {
+    background-position: 50% !important;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .hero__section > .hero__content{
+    position: unset;
+    transform: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__content-title {
+    font-size: 32px;
+  }
+
+  .hero__content .hero__content-btn {
+    padding: 25px 60px;
+    font-size: 18px;
+    margin-top: 64px;
+  }
 }
