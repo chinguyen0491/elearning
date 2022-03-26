@@ -61,6 +61,10 @@ html {
   position: relative;
 }
 
+#header__login-btn--mobile {
+  display: none;
+}
+
 .header__nav-link {
   font-size: 1.6rem;
   color: #fff;
@@ -107,7 +111,7 @@ html {
 }
 
 .header__buyNow-link:hover::after {
-  transform: rotate(45deg) scaleY(3) translateY(0);
+  transform: rotate(45deg) scaleY(5) translateY(0);
 }
 
 /* BUTTON GO TO TOP */
@@ -153,4 +157,81 @@ html {
 
 .test {
   height: 1900px;
+}
+
+.show__nav--main {
+  display: none;
+  cursor: pointer;
+}
+
+// ==================================== MOBILE RESPONSIVE CSS ==================================== //
+@media (max-width: 48em) {  
+  * {
+    max-width: 100%;;
+  }
+
+  // ===================== HEADER RESPONSIVE =====================
+  .header__section {
+    padding: 0 25px;
+  }
+
+  .header__section > a > img {
+    width: 150px;
+  }
+
+  .header__buyNow-link {
+    display: none;
+  }
+  
+  .show__nav--main {
+    display: block;
+    font-size: 3rem;
+    color: #fff;
+    padding: 8px;
+  }
+  
+  .header__nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fa6a6a;
+    overflow: hidden;
+    height: auto;
+    height: 0;
+  }
+  
+  .header__nav.active {
+    height: 400px;
+  }
+
+  .header__nav-item {
+    margin: 0;
+    display: flex;
+  }
+
+  .header__nav-link {
+    display: block;
+    padding: 25px;
+  }
+
+  #header__login-btn--mobile {
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #ff4747;
+    border: 3px solid #fff;
+    margin: 25px auto;
+    padding: 16px ;
+    border-radius: 10px;
+    width: calc(100% - 50px);
+    text-align: center;
+    transition: .2s linear;
+  }
+
+  #header__login-btn--mobile:hover {
+    background-color: #ff8383;
+  }
 }
