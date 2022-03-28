@@ -4,6 +4,7 @@ body {
   padding: 0;
 }
 
+
 .main {
   text-align: center;
   margin-top: 30px;
@@ -14,6 +15,7 @@ body {
   left: 0px;
   padding-top: 150px;
 }
+
 
 @keyframes confetti-slow {
   0% {
@@ -89,7 +91,9 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+
   background: #00c09d;
+
   position: absolute;
 }
 
